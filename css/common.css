@@ -1,0 +1,294 @@
+* {
+  box-sizing: border-box;
+}
+
+ul, ol {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+/* 1 */
+
+#categories {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.item {
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 360px;
+  background: #f6f6fe;
+}
+
+li.item {
+  display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 16px;
+border-radius: 8px;
+padding: 16px;
+width: 392px;
+height: 264px;
+background: #f6f6fe;
+margin-bottom: 24px;
+}
+
+li.item h2 {
+font-weight: 600;
+line-height: 1.33;
+letter-spacing: 0.04em;
+margin-bottom: 16px;
+}
+
+li.item ul li{
+  border-radius: 4px;
+  border: 1px solid #808080;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding: 8px 16px;
+gap: 8px;
+width: 360px;
+}
+
+li.item ul li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+/* 1 */
+
+
+/* 2 */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px 24px;
+}
+
+.gallery-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.gallery-img {
+  height: 100%;
+}
+
+/* 2 */
+
+/* 3 */
+#name-input {
+    max-width: 360px;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    outline: transparent;
+
+font-size: 16px;
+letter-spacing: 0.04em;
+padding-top: 8px;
+padding-left: 16px;
+padding-bottom: 8px;
+  }
+
+  #name-input:focus {
+    border: 1px solid #000;
+  }
+
+/* 3 */
+
+/* 4 */
+
+
+.login-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 408px;
+  height: 256px;
+}
+
+.login-form input:focus {
+  border: 1px solid #000;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 8px;
+
+letter-spacing: 0.04em;
+}
+
+body h1,
+h1 #name-output {
+  font-weight: 600;
+font-size: 24px;
+line-height: 1.33333;
+letter-spacing: 0.04em;
+}
+
+.form-label input {
+  width: 100%;
+  height: 40px;
+}
+
+.button-login {
+  display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+border: none;
+gap: 10px;
+border-radius: 8px;
+padding: 8px 16px;
+width: 86px;
+height: 40px;
+  margin-top: 16px;
+  color:#ffffff;
+background-color:#4E75FF;
+}
+
+/* 4 */
+
+/* 5 */
+
+.widget {
+  text-align: center;
+}
+
+.widget p,
+.widget span {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  margin-bottom: 16px;
+}
+
+.change-color {
+border-radius: 8px;
+border: none;
+width: 148px;
+height: 40px;
+background: #4e75ff;
+color: #fff;
+font-size: 16px;
+letter-spacing: 0.04em;
+}
+
+/* 5 */
+
+/* 6 */
+
+#controls {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 16px;
+  border-radius: 8px;
+padding: 32px;
+background: #f6f6fe;
+margin-bottom: 16px;
+}
+
+#boxes {
+  display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+gap: 32px;
+border-radius: 8px;
+padding: 32px;
+background: #f6f6fe;
+}
+
+.input-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px 72px;
+  min-width: 150px;
+  height: 40px;
+}
+
+.button {
+  display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+gap: 10px;
+border-radius: 8px;
+padding: 8px 16px;
+width: 120px;
+height: 40px;
+border: none;
+
+
+font-size: 16px;
+letter-spacing: 0.04em;
+color: #fff;
+}
+
+.create {
+  background: #4e75ff;
+}
+
+.create:hover {
+  background: #6c8cff;
+}
+
+.destroy {
+  background: #ff4e4e;
+}
+
+.destroy:hover {
+  background: #ff7070;
+}
+
+/* 6 */
